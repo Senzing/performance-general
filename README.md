@@ -11,7 +11,7 @@ G2Engine is also a "share nothing but the database" architecture so it will gene
 
 
 ## High-level stats
-The first thing to do when developing your own application/service is to periodically (every 5min?) output the JSON document returned from G2Engine.stats(...).  This function returns internals with no clear text data on the amount of work Senzing is doing for the process.  It is an accumulation of all the work for all the threads in the process and resets each time you call it.
+The first thing to do when developing your own application/service is to periodically (every 5min?) output the JSON document returned from G2Engine.stats(...).  This function returns internals with no clear text data on the amount of work Senzing is doing for the process.  It is an accumulation of all the work for all the threads in the process and resets each time you call it.  8 of 10 times you have a performance issue, if you send this to Senzing support, they can tell you what is going on.
 
 This is mostly intended for something to be sent to support and the fields aren't generally documented and may change without notice.  Since the database(s) and network capabilities as well as data connection are the primary limiters to scaling, I will describe those parts here.
 ```
