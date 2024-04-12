@@ -9,6 +9,8 @@ What does this mean:
 
 G2Engine is also a "share nothing but the database" architecture so it will generally scale until your database(s) or network can't handle additional workload.  The exception to this is when you have data contention (multiple records trying to resolve the same entity at the same time).
 
+## To validate the basics of the setup
+If you have access to G2Command.py on one of the nodes you are running your Senzing, run it and execute the checkDBPerf command.  It will return the number of inserts it was able to accomplish in a 3 second period from one thread, a pure latency test.  You should be getting at least 9000 inserts in 3000ms as a baseline, something a reasonably configured cloud environment can do.
 
 ## High-level stats
 The first thing to do when developing your own application/service is to periodically (every 5min?) output the JSON document returned from G2Engine.stats(...).  This function returns internals with no clear text data on the amount of work Senzing is doing for the process.  It is an accumulation of all the work for all the threads in the process and resets each time you call it.  8 of 10 times you have a performance issue, if you send this to Senzing support, they can tell you what is going on.
