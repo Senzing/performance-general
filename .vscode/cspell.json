@@ -4,24 +4,24 @@
   "words": [
     "CCLA",
     "CODEOWNER",
-    "ICLA",
-    "Senzing",
+    "cooldown",
     "cpython",
     "ctypes",
     "datalayer",
     "dynload",
     "esbenp",
     "gevents",
+    "ICLA",
+    "kernelsam",
     "libg",
     "libmsodbcsql",
     "libodbc",
     "libpthread",
     "msodbc",
     "msodbcsql",
+    "Senzing",
     "stackoverflow",
     "unixodbc"
   ],
-  "ignorePaths": [
-    ".git/**"
-  ]
+  "ignorePaths": [".git/**"]
 }
