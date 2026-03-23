@@ -9,7 +9,6 @@
     "ctypes",
     "datalayer",
     "dynload",
-    "esbenp",
     "gevents",
     "ICLA",
     "kernelsam",
@@ -23,5 +22,7 @@
     "stackoverflow",
     "unixodbc"
   ],
-  "ignorePaths": [".git/**"]
+  "ignorePaths": [
+    ".git/**"
+  ]
 }
